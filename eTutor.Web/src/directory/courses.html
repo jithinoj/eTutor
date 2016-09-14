@@ -1,0 +1,10 @@
+﻿<div>
+    <table width="100%">
+        <tbody>
+            <tr ng-repeat="directory in ctrl.directories">
+                <td width="5%">{{$index+1}}</td>
+                <td ng-click="ctrl.getFiles(directory.Name)" style="cursor:pointer;">{{directory.Name}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
